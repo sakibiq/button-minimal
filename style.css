@@ -1,0 +1,37 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.switch {
+  display: block;
+  width: 72px;
+  padding: 4px;
+  border-radius: 22px;
+  background: #121213;
+}
+
+.handle {
+  display: block;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background: #dce2e8;
+  transition: cubic-bezier(0.18, 0.69, 0.35, 1.15);
+}
+
+input {
+  position: absolute;
+  transform: scale(0);
+}
+
+input:checked ~ .handle {
+  transform: translateX(34px);
+}
